@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jlcarrascof/Promises/issues"
   },
-  "homepage": "https://github.com/jlcarrascof/Promises#readme"
+  "homepage": "https://github.com/jlcarrascof/Promises#readme",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
 }
