@@ -1,3 +1,4 @@
+/*
 function suma(a, b) {
     return a + b;
 }
@@ -13,3 +14,5 @@ function operaciones(fn) {
 }
 
 operaciones(suma);
+*/
+
