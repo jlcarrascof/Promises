@@ -68,3 +68,5 @@ myPromiseOne.then(function (value) {
     // función errorHandler que maneja el resultado de la promesa en caso de que se rechace.
     console.log("Me rechazaron por: ", reason);
 });
+
+console.log(myPromiseOne);
