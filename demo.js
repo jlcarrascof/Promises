@@ -86,3 +86,10 @@ const myPromiseTwo = new Promise(function (resolve, reject) {
 });
 
 console.log(myPromiseTwo);
+
+myPromiseTwo.then(function (value) {
+    console.log("Me resolvi a :", value);
+} , function (reason) {
+    console.log("Me rechazaron por: ", reason);
+});
+
