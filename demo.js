@@ -64,6 +64,8 @@ function PromesaUno() {
     return myPromiseOne;
 }
 
+PromesaUno();
+
 /*
 myPromiseOne.then(function (value) {
     // función successHandler que maneja el resultado de la promesa en caso de que se resuelva.
