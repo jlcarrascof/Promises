@@ -63,10 +63,10 @@ console.log(myPromiseOne);
 
 myPromiseOne.then(function (value) {
     // función successHandler que maneja el resultado de la promesa en caso de que se resuelva.
+    console.log(myPromiseOne);
     console.log("Me resolvi a :", value);
 }, function (reason) {
     // función errorHandler que maneja el resultado de la promesa en caso de que se rechace.
     console.log("Me rechazaron por: ", reason);
 });
 
-console.log(myPromiseOne);
