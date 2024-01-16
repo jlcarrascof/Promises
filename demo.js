@@ -16,9 +16,34 @@ function operaciones(fn) {
 operaciones(suma);
 */
 
-const fetch = require('node-fetch');
+// Promesa: Es el eventual resultado de una operación asíncrona.
 
-let id = 15;
-fetch(`https://jsonplaceholder.typicode.com/albums/${id}`) // Nueva Promesa
-.then((response) => response.json()) // successHandler
-.then((value) => console.log(value), (reason) => console.log(reason)); // errorHandler
+// Una promesa es un objeto que representa la terminación o el fracaso de una operación asíncrona.
+
+/*
+
+{
+    state: 'pending',
+    result: undefined
+}
+
+*/
+
+// Ejemplo
+
+const myPromise = new Promise();
+
+/*
+    myPromise = "Tomar un vuelo para las vacaciones"
+
+    1.- Comprar el boleto.
+    2.- Hacer la maleta.
+    3.- Ir al aeropuerto.
+    4.- Tomar el vuelo.
+    5.- Llegar al destino.
+*/
+
+myPromise(function (resolve, reject) {
+
+});
+
