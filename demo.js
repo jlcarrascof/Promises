@@ -64,7 +64,17 @@ function PromesaUno() {
     return myPromiseOne;
 }
 
-PromesaUno().then(PromesaDos);
+PromesaUno().then(
+    function (value) {
+        console.log("Promesa 1 - Me resolvi a :", value);
+        PromesaDos.then(function (value) { 
+            console.log("Promesa 2 - Me resolvi a :", value);
+        }, function (reason) {
+
+        });
+    }, function (reason) {
+    }
+);
 
 /*
 myPromiseOne.then(function (value) {
@@ -87,7 +97,7 @@ function PromesaDos(value) {
     console.log(value);
     const hora = 12;
     const myPromiseTwo = new Promise(function (resolve, reject) {
-        const horaLlegada = 11;
+        const horaLlegada = 10;
         setTimeout(() => {
             if (hora - horaLlegada >= 2) {
                 resolve('Qué puntualidad!!');
