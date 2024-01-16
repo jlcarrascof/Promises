@@ -64,7 +64,7 @@ function PromesaUno() {
     return myPromiseOne;
 }
 
-PromesaUno();
+PromesaUno().then(PromesaDos);
 
 /*
 myPromiseOne.then(function (value) {
