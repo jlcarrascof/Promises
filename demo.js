@@ -45,7 +45,7 @@ operaciones(suma);
 
 // myPromise();
 
-const precioBoleto = 600;
+const precioBoleto = 1600;
 const myPromiseOne = new Promise(function (resolve, reject) {
     const saldo = 1000;
     setTimeout(() => {
@@ -62,8 +62,9 @@ const myPromiseOne = new Promise(function (resolve, reject) {
 console.log(myPromiseOne);
 
 myPromiseOne.then(function (value) {
+    // función successHandler que maneja el resultado de la promesa en caso de que se resuelva.
     console.log("Me resolvi a :", value);
 }, function (reason) {
+    // función errorHandler que maneja el resultado de la promesa en caso de que se rechace.
     console.log("Me rechazaron por: ", reason);
 });
-
