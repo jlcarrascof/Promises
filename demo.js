@@ -45,6 +45,7 @@ operaciones(suma);
 
 // myPromise();
 
+/*
 const precioBoleto = 1600;
 const myPromiseOne = new Promise(function (resolve, reject) {
     const saldo = 1000;
@@ -70,4 +71,18 @@ myPromiseOne.then(function (value) {
     console.log(myPromiseOne);
     console.log("Me rechazaron por: ", reason);
 });
+*/
 
+const hora = 12;
+const myPromiseTwo = new Promise(function (resolve, reject) {
+    const horaLlegada = 11;
+    setTimeout(() => {
+        if (hora - horaLlegada >= 2) {
+            resolve('Qué puntualidad!!');
+        } else {
+            reject('Llegaste Tarde!!');
+        }
+    }, 2000);
+});
+
+console.log(myPromiseTwo);
