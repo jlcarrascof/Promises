@@ -43,7 +43,16 @@ const myPromise = new Promise();
     5.- Llegar al destino.
 */
 
-myPromise(function (resolve, reject) {
+myPromise();
 
+const precioBoleto = 600;
+const myPromiseOne = new Promise(function (resolve, reject) {
+   const saldo = 1000;
+    if (precioBoleto < saldo) {
+         resolve('Comprar el boleto');
+         // El resolve cambia internamente el estado de la promesa a fulfilled.
+    } else {
+         reject('No hay saldo suficiente');
+         // El reject cambia internamente el estado de la promesa a rejected.
+    }    
 });
-
