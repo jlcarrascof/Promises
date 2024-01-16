@@ -45,16 +45,18 @@ operaciones(suma);
 
 // myPromise();
 
-const precioBoleto = 1600;
+const precioBoleto = 600;
 const myPromiseOne = new Promise(function (resolve, reject) {
-   const saldo = 1000;
-    if (precioBoleto < saldo) {
-         resolve('Comprar el boleto');
-         // El resolve cambia internamente el estado de la promesa a fulfilled.
-    } else {
-         reject('No hay saldo suficiente');
-         // El reject cambia internamente el estado de la promesa a rejected.
-    }    
+    const saldo = 1000;
+    setTimeout(() => {
+        if (precioBoleto < saldo) {
+            resolve('Comprar el boleto');
+            // El resolve cambia internamente el estado de la promesa a fulfilled.
+        } else {
+            reject('No hay saldo suficiente');
+            // El reject cambia internamente el estado de la promesa a rejected.
+        }    
+    }, 2000);
 });
 
 console.log(myPromiseOne);
