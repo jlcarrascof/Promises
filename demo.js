@@ -60,3 +60,10 @@ const myPromiseOne = new Promise(function (resolve, reject) {
 });
 
 console.log(myPromiseOne);
+
+myPromiseOne.then(function (value) {
+    console.log("Me resolvi a :", value);
+}, function (reason) {
+    console.log("Me rechazaron por: ", reason);
+});
+
