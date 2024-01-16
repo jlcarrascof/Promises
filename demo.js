@@ -31,7 +31,7 @@ operaciones(suma);
 
 // Ejemplo
 
-const myPromise = new Promise();
+// const myPromise = new Promise();
 
 /*
     myPromise = "Tomar un vuelo para las vacaciones"
@@ -43,9 +43,9 @@ const myPromise = new Promise();
     5.- Llegar al destino.
 */
 
-myPromise();
+// myPromise();
 
-const precioBoleto = 600;
+const precioBoleto = 1600;
 const myPromiseOne = new Promise(function (resolve, reject) {
    const saldo = 1000;
     if (precioBoleto < saldo) {
@@ -56,3 +56,5 @@ const myPromiseOne = new Promise(function (resolve, reject) {
          // El reject cambia internamente el estado de la promesa a rejected.
     }    
 });
+
+console.log(myPromiseOne);
