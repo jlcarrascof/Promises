@@ -64,6 +64,9 @@ function PromesaUno() {
     return myPromiseOne;
 }
 
+PromesaUno();
+
+/*
 PromesaUno().then(
     function (value) {
         console.log("Promesa 1 - Me resolvi a :", value);
@@ -75,6 +78,7 @@ PromesaUno().then(
     }, function (reason) {
     }
 );
+*/
 
 /*
 myPromiseOne.then(function (value) {
@@ -117,3 +121,19 @@ myPromiseTwo.then(function (value) {
     console.log("Me rechazaron por: ", reason);
 });
 */
+
+// MyPromiseOne.then(successHandler, errorHandler)
+// .then(null, function(reason) {})) ---> .catch()
+// .catch(function(err) {})
+
+// Cuando el primer parámetro de una promesa en el then() va en null,
+// se puede reemplazar por un catch().
+
+//                   fulfilled
+// Tomar un vuelo -> Comprar Boletos
+//                   rejected
+
+// MyPromiseOne().then(fn).then(fn).then(fn).catch()
+
+
+ 
