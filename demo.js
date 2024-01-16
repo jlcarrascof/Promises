@@ -64,6 +64,7 @@ function PromesaUno() {
     return myPromiseOne;
 }
 
+/*
 myPromiseOne.then(function (value) {
     // función successHandler que maneja el resultado de la promesa en caso de que se resuelva.
     console.log(myPromiseOne);
@@ -78,23 +79,29 @@ myPromiseOne.then(function (value) {
     console.log(myPromiseOne);
     console.log("Me rechazaron por: ", reason);
 });
+*/
 
-const hora = 12;
-const myPromiseTwo = new Promise(function (resolve, reject) {
-    const horaLlegada = 11;
-    setTimeout(() => {
-        if (hora - horaLlegada >= 2) {
-            resolve('Qué puntualidad!!');
-        } else {
-            reject('Llegaste Tarde!!');
-        }
-    }, 2000);
-});
+function PromesaDos(value) {
+    console.log(value);
+    const hora = 12;
+    const myPromiseTwo = new Promise(function (resolve, reject) {
+        const horaLlegada = 11;
+        setTimeout(() => {
+            if (hora - horaLlegada >= 2) {
+                resolve('Qué puntualidad!!');
+            } else {
+                reject('Llegaste Tarde!!');
+            }
+        }, 2000);
+    });
+    console.log(myPromiseTwo);
+    return myPromiseTwo;    
+}    
 
-console.log(myPromiseTwo);
-
+/*
 myPromiseTwo.then(function (value) {
     console.log("Me resolvi a :", value);
 } , function (reason) {
     console.log("Me rechazaron por: ", reason);
 });
+*/
